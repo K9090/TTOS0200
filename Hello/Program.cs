@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 //Timon lottokone v.1.1
 //11.1.2017
+//Toinen lisäkommentti, tuosta!
 namespace lottokone
 {
     class Program
