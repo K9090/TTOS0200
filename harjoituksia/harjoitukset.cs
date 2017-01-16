@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/*
+ * Tekijä: Timo Hakamäki / K9090
+ * Alkaen: 12.1.2017
+*/
 
 namespace harjoituksia
 {
