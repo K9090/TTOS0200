@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoituksia", "harjoituksia\harjoituksia.csproj", "{33519191-AAF6-42E7-89EF-F470194F519B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiuas", "Kiuas\Kiuas.csproj", "{3ADFC560-24EE-4178-9F65-5BE28EAEE17B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pesukone", "Pesukone\Pesukone.csproj", "{25CB40F4-DBEA-4B18-BBDC-5E931A0CF3B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{33519191-AAF6-42E7-89EF-F470194F519B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33519191-AAF6-42E7-89EF-F470194F519B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33519191-AAF6-42E7-89EF-F470194F519B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ADFC560-24EE-4178-9F65-5BE28EAEE17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADFC560-24EE-4178-9F65-5BE28EAEE17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADFC560-24EE-4178-9F65-5BE28EAEE17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADFC560-24EE-4178-9F65-5BE28EAEE17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CB40F4-DBEA-4B18-BBDC-5E931A0CF3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CB40F4-DBEA-4B18-BBDC-5E931A0CF3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CB40F4-DBEA-4B18-BBDC-5E931A0CF3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CB40F4-DBEA-4B18-BBDC-5E931A0CF3B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
