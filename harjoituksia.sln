@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Televisio", "Televisio\Tele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto", "Auto\Auto.csproj", "{62AD00DD-76CC-470B-8365-B87337E4167A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opiskelija", "Opiskelija\Opiskelija.csproj", "{8864477F-0EA7-480F-8A69-2497C18B8C63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{62AD00DD-76CC-470B-8365-B87337E4167A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62AD00DD-76CC-470B-8365-B87337E4167A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62AD00DD-76CC-470B-8365-B87337E4167A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8864477F-0EA7-480F-8A69-2497C18B8C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8864477F-0EA7-480F-8A69-2497C18B8C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8864477F-0EA7-480F-8A69-2497C18B8C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8864477F-0EA7-480F-8A69-2497C18B8C63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

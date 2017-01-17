@@ -29,6 +29,5 @@ namespace VehicleTeht
             vehicle1.PrintData();
             vehicle1.ToString();
         }
-        
     }
 }
