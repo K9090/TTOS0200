@@ -11,6 +11,21 @@ namespace JAMK.IT
         public bool PowerOn { get; set; }
         public bool DoorClosed { get; set; }
         public bool WaterOn { get; set; }
-        public int WashProgram { get; set; }
+        int wProgram;
+        public int WashProgram{
+            get { return wProgram; }
+            set
+            {
+                wProgram = value;
+                if (wProgram < 1)
+                {
+                    wProgram = 10;
+                }
+                else if (wProgram > 10)
+                {
+                    wProgram = 1;
+                }
+            }
+        }
     }
 }
