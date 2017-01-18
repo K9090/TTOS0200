@@ -1,0 +1,9 @@
+D:\K9090\Olio\TuntiHarj3\bin\Debug\TuntiHarj3.exe.config
+D:\K9090\Olio\TuntiHarj3\bin\Debug\TuntiHarj3.exe
+D:\K9090\Olio\TuntiHarj3\bin\Debug\TuntiHarj3.pdb
+D:\K9090\Olio\TuntiHarj3\obj\Debug\TuntiHarj3.csprojResolveAssemblyReference.cache
+D:\K9090\Olio\TuntiHarj3\obj\Debug\TuntiHarj3.exe
+D:\K9090\Olio\TuntiHarj3\obj\Debug\TuntiHarj3.pdb
+D:\K9090\Olio\Repo\TuntiHarj3\bin\Debug\TuntiHarj3.exe.config
+D:\K9090\Olio\Repo\TuntiHarj3\obj\Debug\TuntiHarj3.exe
+D:\K9090\Olio\Repo\TuntiHarj3\obj\Debug\TuntiHarj3.pdb
