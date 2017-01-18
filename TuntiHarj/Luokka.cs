@@ -8,8 +8,13 @@ using System.Threading.Tasks;
 namespace JAMK.IT
 {
     class Elevator
-    { 
+    {
+        private bool isFloorValid = true;
         private int floor = 1;
+        private bool IsFloorValid
+        {
+            get { return isFloorValid; }
+        }
         public int Floor {
             get { return floor; }
             set
@@ -17,22 +22,43 @@ namespace JAMK.IT
                 floor = value;
                 if (value < 1)
                 {
+                    isFloorValid = false;
                     floor = 1;
                 }
                 else if (floor > 5)
                 {
+                    isFloorValid = false;
                     floor = 5;
                 }
                 else
                 {
+                    isFloorValid = true;
                     floor = value;
                 }
+            }
+        }
+        public string FloorMsg()
+        {
+            if (IsFloorValid)
+            {
+                return "Valittu kerros " + Floor;
+            }
+            else
+            {
+                return "Valittu kerros ei ole käytettävissä";
             }
         }
 
         public override string ToString()
         {
-            return "Elevator is now in floor: " + Floor;
+            if (IsFloorValid)
+            {
+                return FloorMsg();
+            }
+            else
+            {
+                return FloorMsg();
+            }  
         }
     }
 }

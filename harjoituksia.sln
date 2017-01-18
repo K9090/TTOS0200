@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kello", "Kello\Kello.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiHarj", "TuntiHarj\TuntiHarj.csproj", "{C742A1C6-1B46-45E2-9CC1-336A2454CA41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiHarj2", "TuntiHarj2\TuntiHarj2.csproj", "{CFFB0509-17EC-46B1-80C6-6E3B203B6CFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiHarj3", "D:\K9090\Olio\TuntiHarj3\TuntiHarj3.csproj", "{79D28F64-58AA-4DF1-B689-50052D76E151}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{C742A1C6-1B46-45E2-9CC1-336A2454CA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C742A1C6-1B46-45E2-9CC1-336A2454CA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C742A1C6-1B46-45E2-9CC1-336A2454CA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFB0509-17EC-46B1-80C6-6E3B203B6CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFB0509-17EC-46B1-80C6-6E3B203B6CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFB0509-17EC-46B1-80C6-6E3B203B6CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFB0509-17EC-46B1-80C6-6E3B203B6CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D28F64-58AA-4DF1-B689-50052D76E151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D28F64-58AA-4DF1-B689-50052D76E151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D28F64-58AA-4DF1-B689-50052D76E151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D28F64-58AA-4DF1-B689-50052D76E151}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
