@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiHarj", "TuntiHarj\Tunt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiHarj2", "TuntiHarj2\TuntiHarj2.csproj", "{CFFB0509-17EC-46B1-80C6-6E3B203B6CFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiHarj3", "D:\K9090\Olio\TuntiHarj3\TuntiHarj3.csproj", "{79D28F64-58AA-4DF1-B689-50052D76E151}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuntiHarj3", "\TuntiHarj3\TuntiHarj3.csproj", "{79D28F64-58AA-4DF1-B689-50052D76E151}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
