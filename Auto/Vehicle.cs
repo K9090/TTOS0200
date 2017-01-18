@@ -48,8 +48,9 @@ namespace JAMK.IT
         public override string ToString()
         {
             string tiedot = Name + ", nopeus: " + Speed + " km/h, " + Tyres + " kpl renkaita";
-            
+
             Console.WriteLine(tiedot);
+
             return tiedot;
         }
     }

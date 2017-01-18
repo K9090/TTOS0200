@@ -27,8 +27,7 @@ namespace JAMK.IT
 
         public override string ToString()
         {
-            string tiedot = SurName + ", " + FirstName + ", " + ID + ", " + Age;
-            return tiedot;
+            return SurName + ", " + FirstName + ", " + ID + ", " + Age;
         }
     }
 }
