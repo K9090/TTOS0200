@@ -28,8 +28,8 @@ namespace Teht5vko3
                 {
                     Console.Write("Give a new volume value (0-9): ");
                     radio.Volume = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Enter a new frequency (2000.0 - 26000.0): ");
-                    radio.Frequency = Double.Parse(Console.ReadLine());
+                    Console.Write("Enter a new frequency (2000,0 - 26000,0): ");
+                    radio.Frequency = Single.Parse(Console.ReadLine());
 
                     Console.WriteLine(radio.ToString());
                 }

@@ -47,10 +47,10 @@ namespace JAMK.IT
         {
             get { return isFreqValid; }
         }
-        private const double maxFreq = 26000.0;
-        private const double minFreq = 2000.0;
-        private double frequency = 2000.0;
-        public double Frequency
+        private const float maxFreq = 26000f;
+        private const float minFreq = 2000f;
+        private float frequency = 2000f;
+        public float Frequency
         {
             get { return frequency; }
             set
