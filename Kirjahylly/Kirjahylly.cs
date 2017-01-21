@@ -6,52 +6,57 @@ using System.Threading.Tasks;
 
 namespace JAMK.IT
 {
-    class Vehicle
+    class BookShelf
     {
         public string Name { get; set; }
-        public string Model { get; set; }
-        public int ModelYear { get; set; }
+        public string NumberOfRows { get; set; }
+        public int NumberOfShelves { get; set; }
         public string Color { get; set; }
 
-        public Vehicle()
+
+        public BookShelf()
         {
         }
 
         // constructor takes vehicle name and model as parameters
-        public Vehicle(string name, string model)
+        public BookShelf(string name, string color)
         {
             Name = name;
-            Model = model;
+            Color = color;
         }
 
         // return Vehicle data as a one string, override Object class ToString()-method
         public override string ToString()
         {
-            return "Name: " + Name + ", Model: " + Model + ", Model year: " + ModelYear + ", Color: " + Color;
+            return "Name: " + Name + ", Color: " + Color + ", Number of shelves: " + NumberOfShelves + ", Number of rows: " + NumberOfRows;
         }
     }
 
-    class Bike : Vehicle
+    class DigitalMedia
     {
-        public bool HasGears { get; set; }
-        public string GearModel { get; set; }
+        public bool IsPhysical { get; set; }
+        public float DataSize { get; set; }
+        public string TypeOfMedia { get; set; } //ie CD, DVD, BluRay, Memory stick or card
+        public string Name { get; set; } //If any
 
-        public Bike()
+
+        public DigitalMedia()
         {
         }
 
         // parametric constuctor calls base class constructor with parameters
-        public Bike(string name, string model, bool hasGears, string gearModel)
-            : base(name, model)
+        public DigitalMedia(bool isPhysical, float dataSize, string typeOfMedia, string name)
         {
-            HasGears = hasGears;
-            GearModel = gearModel;
+            IsPhysical = isPhysical;
+            DataSize = dataSize;
+            TypeOfMedia = typeOfMedia;
+            Name = name;
         }
 
         // override base class ToString()-method
         public override string ToString()
         {
-            return base.ToString() + ", HasGears: " + HasGears + ", Gear Model: " + GearModel;
+            return base.ToString() + ", Is a physical media: " + IsPhysical + ", Size of media: " + DataSize + ", Type of media: " + TypeOfMedia;
         }
     }
 
