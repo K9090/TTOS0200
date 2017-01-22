@@ -14,7 +14,8 @@ namespace T6JaT7
             int width = 70;
             int height = 50;
             Console.SetWindowSize(width, height);
-
+//---------------------------------------------------------------------------------
+//T6
             Bookshelf bookshelf = new Bookshelf();
             bookshelf.Name = "IKEA, JätteMyckeHaaHaa";
             bookshelf.Color = "Black and white";
@@ -59,6 +60,9 @@ namespace T6JaT7
             math.Thickness = 1;
             math.Level = "High school beginner";
             Console.WriteLine(math.ToString() + "\n");
+
+//---------------------------------------------------------------------------------
+//T7
 
             Bed singleBed = new Bed();
             singleBed.PersonCount = 1;
