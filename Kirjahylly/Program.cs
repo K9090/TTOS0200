@@ -5,47 +5,76 @@ using System.Text;
 using System.Threading.Tasks;
 using JAMK.IT;
 
-namespace BookshelfApplication
+namespace T6JaT7
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // create one BluRay movie object
-            DigitalMedia bluRayMovie = new DigitalMedia();
-            bluRayMovie.IsPhysical = true;
-            bluRayMovie.DataSize = 45;
-            bluRayMovie.TypeOfMedia = "Blu Ray disc";
+            int width = 70;
+            int height = 50;
+            Console.SetWindowSize(width, height);
+
+            Bookshelf bookshelf = new Bookshelf();
+            bookshelf.Name = "IKEA, JätteMyckeHaaHaa";
+            bookshelf.Color = "Black and white";
+            bookshelf.Function = "Stores books and small items";
+            bookshelf.NumberOfRows = 2;
+            bookshelf.NumberOfShelves = 4;
+            Console.WriteLine(bookshelf.ToString() + "\n");
+
+            BluRay bluRayMovie = new BluRay();
+            bluRayMovie.TypeOfData = "Movie";
+            bluRayMovie.StorageSize = "25GB";
+            bluRayMovie.IsBluray = true;
             bluRayMovie.Name = "Geteven";
-            Console.WriteLine(bluRayMovie.ToString());
+            Console.WriteLine(bluRayMovie.ToString() + "\n");
 
-            // create one DVD document Object
-            DigitalMedia dvdDoc = new DigitalMedia();
+            DVD dvdDoc = new DVD();
             dvdDoc.Name = "Tunturi";
-            dvdDoc.IsPhysical = true;
-            dvdDoc.DataSize = 4.7f;
-            dvdDoc.TypeOfMedia = "DVD disc";
-            Console.WriteLine(dvdDoc.ToString());
+            dvdDoc.IsDVD = true;
+            dvdDoc.StorageSize = "4,7GB";
+            dvdDoc.TypeOfData = "Documentary video";
+            Console.WriteLine(dvdDoc.ToString() + "\n");
 
-            // create a one Bike Object
-            Bike bike2 = new Bike();
-            bike2.Name = "-some chinesey crap-";
-            bike2.Model = "-fear for your life-";
-            bike2.ModelYear = 2030;
-            bike2.Color = "Rusted Grey";
-            bike2.HasGears = false;
-            bike2.GearModel = "";
-            Console.WriteLine(bike2.ToString());
+            CD musicCd = new CD();
+            musicCd.Name = "Theme music for Geteven";
+            musicCd.TypeOfData = "Music... barely";
+            musicCd.StorageSize = "700mb";
+            musicCd.IsCD = true;
+            Console.WriteLine(musicCd.ToString() + "\n");
 
-            // create another Boat object
-            Boat boat = new Boat();
-            boat.Name = "Works Better";
-            boat.Model = "On Land";
-            boat.ModelYear = 1650;
-            boat.Color = "Brown";
-            boat.BoatType = "Motokayak";
-            boat.SeatCount = 3;
-            Console.WriteLine(boat.ToString());
+            Recreational fantasy = new Recreational();
+            fantasy.Name = "Lord of the Rings";
+            fantasy.Genre = "Fantasy";
+            fantasy.PageNumber = 1000;
+            fantasy.Thickness = 10;
+            fantasy.TimesRead = 3;
+            Console.WriteLine(fantasy.ToString() + "\n");
+
+            Study math = new Study();
+            math.Name = "Matematiikan Linkki";
+            math.Genre = "Educational";
+            math.PageNumber = 128;
+            math.Thickness = 1;
+            math.Level = "High school beginner";
+            Console.WriteLine(math.ToString() + "\n");
+
+            Bed singleBed = new Bed();
+            singleBed.PersonCount = 1;
+            singleBed.Function = "Sleeping unit";
+            singleBed.Color = "White";
+            singleBed.LegCount = 4;
+            singleBed.Width = 100;
+            Console.WriteLine(singleBed.ToString() + "\n");
+
+            Bed orgyBed = new Bed();
+            orgyBed.PersonCount = 4;
+            orgyBed.Function = "XXX unit";
+            orgyBed.Color = "Red";
+            orgyBed.LegCount = 16;
+            orgyBed.Width = 240;
+            Console.WriteLine(orgyBed.ToString() + "\n");
         }
     }
 }
