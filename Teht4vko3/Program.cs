@@ -17,7 +17,7 @@ namespace VehicleApplication
             automobile.Model = "Civic";
             automobile.ModelYear = 2006;
             automobile.Color = "Metallic Blue";
-            Console.WriteLine(automobile.ToString());
+            Console.WriteLine(automobile.ToString() + "\n");
 
             // create a one Bike Object
             Bike bike1 = new Bike();
@@ -27,7 +27,7 @@ namespace VehicleApplication
             bike1.Color = "Black";
             bike1.HasGears = true;
             bike1.GearModel = "Wanderer";
-            Console.WriteLine(bike1.ToString());
+            Console.WriteLine(bike1.ToString() + "\n");
 
             // create a one Bike Object
             Bike bike2 = new Bike();
@@ -37,7 +37,7 @@ namespace VehicleApplication
             bike2.Color = "Rusted Grey";
             bike2.HasGears = false;
             bike2.GearModel = "";
-            Console.WriteLine(bike2.ToString());
+            Console.WriteLine(bike2.ToString() + "\n");
 
             // create another Boat object
             Boat boat = new Boat();
@@ -47,7 +47,7 @@ namespace VehicleApplication
             boat.Color = "Brown";
             boat.BoatType = "Motokayak";
             boat.SeatCount = 3;
-            Console.WriteLine(boat.ToString());
+            Console.WriteLine(boat.ToString() + "\n");
         }
     }
 }

@@ -27,7 +27,7 @@ namespace JAMK.IT
         // return Vehicle data as a one string, override Object class ToString()-method
         public override string ToString()
         {
-            return "Name: " + Name + ", Model: " + Model + ", Model year: " + ModelYear + ", Color: " + Color;
+            return "Name: " + Name + "\n\tModel: " + Model + "\n\tModel year: " + ModelYear + "\n\tColor: " + Color;
         }
     }
 
@@ -51,7 +51,7 @@ namespace JAMK.IT
         // override base class ToString()-method
         public override string ToString()
         {
-            return base.ToString() + ", HasGears: " + HasGears + ", Gear Model: " + GearModel;
+            return base.ToString() + "\n\tHasGears: " + HasGears + "\n\tGear Model: " + GearModel;
         }
     }
 
@@ -75,7 +75,7 @@ namespace JAMK.IT
         // override base class ToString()-method
         public override string ToString()
         {
-            return base.ToString() + ", Boat type: " + BoatType + ", Seat count: " + SeatCount;
+            return base.ToString() + "\n\tBoat type: " + BoatType + "\n\tSeat count: " + SeatCount;
         }
     }
 }

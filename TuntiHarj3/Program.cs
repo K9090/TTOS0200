@@ -11,15 +11,15 @@ namespace PersonApplication
     {
         static void Main(string[] args)
         {
-            // create a one Employee object
+            // create an Employee object
             Employee person = new Employee();
             person.FirstName = "Kirsi";
             person.LastName = "Kernel";
             person.Profession = "Kylähullu";
             person.Salary = 3000;
-            Console.WriteLine(person.ToString());
+            Console.WriteLine(person.ToString() + "\n");
 
-            // create a one Boss Object
+            // create a Boss Object
             Boss teacher = new Boss();
             teacher.FirstName = "Teppo";
             teacher.LastName = "Konsoli";
@@ -27,7 +27,7 @@ namespace PersonApplication
             teacher.Salary = 4000;
             teacher.Car = "Lada";
             teacher.Bonus = 6000;
-            Console.WriteLine(teacher.ToString());
+            Console.WriteLine(teacher.ToString() + "\n");
 
             // create another Employee object
             Employee person2 = new Employee();
@@ -35,7 +35,7 @@ namespace PersonApplication
             person2.LastName = "Husso";
             person2.Profession = "Velhotar";
             person2.Salary = 10000;
-            Console.WriteLine(person2.ToString());
+            Console.WriteLine(person2.ToString() + "\n");
         }
     }
 }
