@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using JAMK.IT;
 
-namespace PersonApplication
+namespace VehicleApplication
 {
     class Program
     {

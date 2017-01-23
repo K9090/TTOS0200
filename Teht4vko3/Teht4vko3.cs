@@ -13,12 +13,11 @@ namespace JAMK.IT
         public int ModelYear { get; set; }
         public string Color { get; set; }
 
-        // default constructor
         public Vehicle()
         {
         }
 
-        // constructor takes employee name and model as parameters
+        // constructor takes vehicle name and model as parameters
         public Vehicle(string name, string model)
         {
             Name = name;
@@ -37,7 +36,6 @@ namespace JAMK.IT
         public bool HasGears { get; set; }
         public string GearModel { get; set; }
 
-        // default constructor
         public Bike()
         {
         }
@@ -62,7 +60,6 @@ namespace JAMK.IT
         public string BoatType { get; set; }
         public int SeatCount { get; set; }
 
-        // default constructor
         public Boat()
         {
         }
@@ -74,7 +71,6 @@ namespace JAMK.IT
             BoatType = boatType;
             SeatCount = seatCount;
         }
-
 
         // override base class ToString()-method
         public override string ToString()

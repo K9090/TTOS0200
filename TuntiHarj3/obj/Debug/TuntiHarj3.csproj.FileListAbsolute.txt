@@ -13,3 +13,9 @@ C:\Users\6468\Source\Repos\harjoitukset\TuntiHarj3\obj\Debug\TuntiHarj3.pdb
 C:\Users\6468\Source\Repos\harjoitukset\TuntiHarj3\bin\Debug\TuntiHarj3.exe
 C:\Users\6468\Source\Repos\harjoitukset\TuntiHarj3\bin\Debug\TuntiHarj3.pdb
 C:\Users\6468\Source\Repos\harjoitukset\TuntiHarj3\obj\Debug\TuntiHarj3.csprojResolveAssemblyReference.cache
+C:\Users\Timo Hakamäki\Source\Repos\harjoitukset\TuntiHarj3\bin\Debug\TuntiHarj3.exe.config
+C:\Users\Timo Hakamäki\Source\Repos\harjoitukset\TuntiHarj3\bin\Debug\TuntiHarj3.exe
+C:\Users\Timo Hakamäki\Source\Repos\harjoitukset\TuntiHarj3\bin\Debug\TuntiHarj3.pdb
+C:\Users\Timo Hakamäki\Source\Repos\harjoitukset\TuntiHarj3\obj\Debug\TuntiHarj3.csprojResolveAssemblyReference.cache
+C:\Users\Timo Hakamäki\Source\Repos\harjoitukset\TuntiHarj3\obj\Debug\TuntiHarj3.exe
+C:\Users\Timo Hakamäki\Source\Repos\harjoitukset\TuntiHarj3\obj\Debug\TuntiHarj3.pdb
