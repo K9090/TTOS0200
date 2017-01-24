@@ -8,48 +8,59 @@ namespace JAMK.IT
 {
     class Fridge
     {
+        List<Consumable> consumable = new List<Consumable>();
+
         public string Manufacturer { get; set; }
         public string Model { get; set; }
-        private const int maxSpace = 20;
-        private const int minSpace = 0;
+        internal static int maxSpace = 20;
+        internal const int minSpace = 0;
         private int space = 20;
         public int Space {
             get { return space; }
             set
             {
-                space = value;
-                if (space == minSpace)
+                if (space <= maxSpace)
                 {
-                    Console.WriteLine("No more room!");
+                    space = value;
+                }
+                else if (space >= minSpace)
+                {
                     space = minSpace;
-                }
-                else if (space == maxSpace)
-                {
-                    Console.WriteLine("Fridge empty");
-                }
-                else
-                {
-                    Console.WriteLine("Room for: {0}", Space);
                 }
             }
         }
-        public List<Consumable> consumable { get; }
+        public List<Consumable> Consumbale
+        {
+            get { return consumable; }
+        }
 
-        public void AddConsumable(Consumable consumable)
+        public void AddConsumable(Consumable foodStuff)
         {
             if (space <= maxSpace)
             {
-
+                consumable.Add(foodStuff);
+                space--;
+                Console.WriteLine("Room for: {0}", Space);
             }
-            else if (space >= maxSpace)
+            else
             {
+                Console.WriteLine("No more room!");
+                space = minSpace;
+            }
+        }
 
+        public void RemConsumable(Consumable foodStuff)
+        {
+            if (space >= minSpace)
+            {
+                consumable.Remove(foodStuff);
+                Console.WriteLine("Room for: {0}", Space);
+                space++;
             }
         }
 
         public Fridge()
         {
-            consumable = new List<Consumable>();
         }
 
         public Fridge(string manufacturer, string model, int space)
@@ -68,8 +79,16 @@ namespace JAMK.IT
     class Consumable
     {
         public string Name { get; set; }
-        public int SpaceTaken { get; set; }
+        private int spaceTaken = 0;
+        public int SpaceTaken {
+            get { return spaceTaken; }
+            set
+            {
+                spaceTaken = value;
+            }
+                }
         public string ContSize { get; set; }
+        public int Count { get; set; }
 
         public Consumable()
         { }
