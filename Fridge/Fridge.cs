@@ -35,6 +35,18 @@ namespace JAMK.IT
         }
         public List<Consumable> consumable { get; }
 
+        public void AddConsumable(Consumable consumable)
+        {
+            if (space <= maxSpace)
+            {
+
+            }
+            else if (space >= maxSpace)
+            {
+
+            }
+        }
+
         public Fridge()
         {
             consumable = new List<Consumable>();
@@ -57,30 +69,21 @@ namespace JAMK.IT
     {
         public string Name { get; set; }
         public int SpaceTaken { get; set; }
+        public string ContSize { get; set; }
 
         public Consumable()
         { }
 
-        public Consumable(string name, int spaceTaken)
+        public Consumable(string name, int spaceTaken, string contSize)
         {
             Name = name;
             SpaceTaken = spaceTaken;
+            ContSize = contSize;
         }
 
         public override string ToString()
         {
-            return "Product name: " + Name;
+            return "Product name: " + Name + ", size: " + ContSize;
         }
     }
-
-    class Drink : Consumable
-    {
-
-    }
-
-    class Edible : Consumable
-    {
-
-    }
-
 }

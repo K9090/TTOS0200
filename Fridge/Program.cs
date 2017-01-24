@@ -14,6 +14,7 @@ namespace Fridge
             Consumable beer = new Consumable();
             beer.Name = "Karhu III";
             beer.SpaceTaken = 1;
+            beer.ContSize = "0,33l";
 
             Console.WriteLine(beer.ToString());
         }
