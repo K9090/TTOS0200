@@ -11,7 +11,11 @@ namespace Fridge
     {
         static void Main(string[] args)
         {
+            Consumable beer = new Consumable();
+            beer.Name = "Karhu III";
+            beer.SpaceTaken = 1;
 
+            Console.WriteLine(beer.ToString());
         }
     }
 }
