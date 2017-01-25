@@ -17,16 +17,25 @@ namespace JAMK.IT
             get { return song; } 
         }
 
+        public void AddSong(Song songName)
+        {
+            song.Add(songName);
+        }
+
         public override string ToString()
         {
-            return "Artist: " + Artist + "\nName: " + Name;
+            return "Artist: " + Artist + "\nName: " + Name + "\nSongs:";
         }
     }
 
     class Song
     {
         public string SongName { get; set; }
-        public float Duration { get; set; }
+        public string Duration { get; set; }
 
+        public override string ToString()
+        {
+            return "\t- " + SongName + ", " + Duration;
+        }
     }
 }
