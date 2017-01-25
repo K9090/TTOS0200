@@ -16,14 +16,14 @@ namespace T2vko4
             fridge.Model = "Kalsa";
 
             Consumable beer = new Consumable();
-            beer.Name = "Karhu III";
-            beer.SpaceTaken = 3;
-            beer.ContSize = "0,33l";
+            beer.Name = "Karhu III, 6-pack";
+            beer.SpaceTaken = 6;
+            beer.ContSize = "6 x 0.33l";
 
             Consumable orange = new Consumable();
-            orange.Name = "Appelsiini";
+            orange.Name = "Appelsiinipussi";
             orange.SpaceTaken = 2;
-            orange.ContSize = "0.3kg";
+            orange.ContSize = "2.0kg";
 
             Console.WriteLine(fridge.ToString());
 
@@ -41,7 +41,6 @@ namespace T2vko4
             {
                 Console.WriteLine("Added: " + beer.ToString());
                 fridge.AddConsumable(beer);
-                //fridge.Space = fridge.Space - beer.SpaceTaken;
                 if (fridge.Space <= 0)
                 {
                     break;

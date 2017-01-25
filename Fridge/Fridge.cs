@@ -17,17 +17,7 @@ namespace JAMK.IT
         private int space = 20;
         public int Space {
             get { return space; }
-            set
-            {
-                if (space <= maxSpace)
-                {
-                    space = value;
-                }
-                else if (space <= minSpace)
-                {
-                    space = minSpace;
-                }
-            }
+            set { space = value; }
         }
         public List<Consumable> Consumbale
         {
@@ -39,10 +29,10 @@ namespace JAMK.IT
             if (space <= maxSpace)
             {
                 consumable.Add(foodStuff);
-                space--;
+                space -= foodStuff.SpaceTaken;
                 Console.WriteLine("Room for: {0}", Space);
             }
-            else
+            else if (space == minSpace)
             {
                 Console.WriteLine("No more room!");
                 space = minSpace;
@@ -51,11 +41,16 @@ namespace JAMK.IT
 
         public void RemConsumable(Consumable foodStuff)
         {
-            if (space >= minSpace)
+            if (space >= minSpace && space <= maxSpace)
             {
                 consumable.Remove(foodStuff);
                 Console.WriteLine("Room for: {0}", Space);
-                space++;
+                space += foodStuff.SpaceTaken;
+            }
+            else if (space == maxSpace)
+            {
+                Console.WriteLine("Fridge empty");
+                space = maxSpace;
             }
         }
 
@@ -82,10 +77,7 @@ namespace JAMK.IT
         private int spaceTaken = 0;
         public int SpaceTaken {
             get { return spaceTaken; }
-            set
-            {
-                spaceTaken = value;
-            }
+            set { spaceTaken = value; }
                 }
         public string ContSize { get; set; }
         public int Count { get; set; }
