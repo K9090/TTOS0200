@@ -32,19 +32,26 @@ namespace T2vko4
                 Console.WriteLine("Fridge empty\n");
             }
 
+            Console.WriteLine("How many beers you bought?");
+            beer.Count = Convert.ToInt32(Console.ReadLine());
+
             List<Consumable> consumable = new List<Consumable>();
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < beer.Count; i++)
             {
                 Console.WriteLine("Added: " + beer.ToString());
                 fridge.AddConsumable(beer);
+                //fridge.Space = fridge.Space - beer.SpaceTaken;
                 if (fridge.Space <= 0)
                 {
                     break;
                 }
             }
 
-            for (int i = 0; i < 3; i++)
+            Console.WriteLine("How many oranges you bought?");
+            orange.Count = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < orange.Count; i++)
             {
                 fridge.AddConsumable(orange);
                 Console.WriteLine("Added: " + orange.ToString());
@@ -54,9 +61,9 @@ namespace T2vko4
                 }
             }
 
-            Console.WriteLine();
+            Console.WriteLine("\nConsuming...\n");
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < beer.Count; i++)
             {
                 fridge.RemConsumable(beer);
                 Console.WriteLine("Removed: " + beer.ToString());
@@ -66,7 +73,7 @@ namespace T2vko4
                 }
             }
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < orange.Count; i++)
             {
                 fridge.RemConsumable(orange);
                 Console.WriteLine("Removed: " + orange.ToString());
@@ -75,8 +82,7 @@ namespace T2vko4
                     break;
                 }
             }
-
-
+            Console.WriteLine("\n");
         }
     }
 }

@@ -23,7 +23,7 @@ namespace JAMK.IT
                 {
                     space = value;
                 }
-                else if (space >= minSpace)
+                else if (space <= minSpace)
                 {
                     space = minSpace;
                 }
