@@ -6,126 +6,50 @@ using System.Threading.Tasks;
 
 namespace JAMK.IT
 {
-    abstract class Card
+    class Card
     {
-        private List<Card> cards;
-        public List<Card> Cards { get { return cards; } }
-        private int minNumber = 1;
-        private int maxNumber = 13;
-        private int number;
-        public int Number {
-            get { return number; }
-            set
+        public int Number { get; set; }
+        public string d = "Diamonds";
+        public string c = "Clubs";
+        public string s = "Spades";
+        public string h = "Hearts";
+        public string Suit { get; set; }
+    }
+    class Deck
+    {
+        public List<Card> Cards { get; set; }
+
+        private int maxCards = 13;
+        private int amountOfSuites = 4;
+   
+        public Deck()
+        {
+            Cards = new List<Card>();
+            Card card;
+
+            for (int i = 1; i <= amountOfSuites; i++)
             {
-                if (number >= minNumber || number <= maxNumber)
+                for (int j = 1; j < maxCards; j++)
                 {
-                    number = value;
+                    card = new Card();
+                    card.Number = j;
+                    switch (i)
+                    {
+                        default:
+                        case 1: card.Suit = card.c; break;
+                        case 2: card.Suit = card.d; break;
+                        case 3: card.Suit = card.h; break;
+                        case 4: card.Suit = card.s; break;
+                    }
+                    Cards.Add(card);
                 }
-                else
-                {
-                    Console.WriteLine(number + " will not do"); 
-                }
             }
         }
-        public virtual string Suit { get; set; }
-
-        public Card()
+        
+        public Card LoopDeck()
         {
-
-        }
-        public Card(int number)
-        {
-            Number = number;
-        }
-        public void AddCard(Card card)
-        {
-            cards.Add(card);
-        }
-        public void LoopNumbers(int number)
-        {
-            for (int i = 0; i < 13; i++)
-            {
-                number++;
-            }
-        }
-
-        public abstract void GiveNumber();
-    }
-    class Hearts : Card
-    {
-        public override string Suit
-        {
-            get
-            {
-                return "Hearts";
-            }
-
-            set
-            {
-                Suit = value;
-            }
-        }
-        public override void GiveNumber()
-        {
-            Console.WriteLine(Number + " of " + Suit);
-        }
-    }
-    class Diamonds : Card
-    {
-        public override string Suit
-        {
-            get
-            {
-                return "Diamonds";
-            }
-
-            set
-            {
-                Suit = value;
-            }
-        }
-        public override void GiveNumber()
-        {
-            Console.WriteLine(Suit);
-        }
-
-    }
-    class Clubs : Card
-    {
-        public override string Suit
-        {
-            get
-            {
-                return "Clubs";
-            }
-
-            set
-            {
-                Suit = value;
-            }
-        }
-        public override void GiveNumber()
-        {
-            Console.WriteLine(Suit);
-        }
-    }
-    class Spades : Card
-    {
-        public override string Suit
-        {
-            get
-            {
-                return "Spades";
-            }
-
-            set
-            {
-                Suit = value;
-            }
-        }
-        public override void GiveNumber()
-        {
-            Console.WriteLine(Suit);
-        }
+            Card card = Cards[maxCards * amountOfSuites];
+            return card;
+        } 
     }
 }

@@ -10,24 +10,25 @@ namespace JAMK.IT.T3vko5
     {
         static void Main(string[] args)
         {
-            Deck();
+            UseDeck();
         }
-        static void Deck()
+        static void UseDeck()
         {
-            Hearts heart9 = new Hearts();
-            heart9.Number = 9;
-            heart9.Suit = "Hearts";
-            heart9.LoopNumbers(1);
+            Deck deck = new Deck();
+            List<Card> cards = new List<Card>();
+            int deckSize = 52;
 
-            Hearts heart10 = new Hearts();
-            heart10.Number = 10;
-            heart10.Suit = "Hearts";
-
-            List<Card> cardDeck = new List<Card>();
-
-            cardDeck.Add(new Hearts());
+            for (int i = 0; i < deckSize; i++)
+            {
+                cards.Add(deck.LoopDeck());
+            }
 
             Console.WriteLine("Loop through the card deck:");
+
+            foreach (Card x in cards)
+            {
+                Console.WriteLine(x.Number + " of " + x.Suit);
+            }
         }
     }
 }
