@@ -16,9 +16,8 @@ namespace JAMK.IT.T3vko5
         {
             Deck deck = new Deck();
             List<Card> cards = new List<Card>();
-            int deckSize = 52;
 
-            for (int i = 0; i < deckSize; i++)
+            for (int i = 0; i <= 52; i++)
             {
                 cards.Add(deck.LoopDeck());
             }

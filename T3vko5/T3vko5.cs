@@ -15,21 +15,19 @@ namespace JAMK.IT
         public string h = "Hearts";
         public string Suit { get; set; }
     }
+
     class Deck
     {
         public List<Card> Cards { get; set; }
-
-        private int maxCards = 13;
-        private int amountOfSuites = 4;
    
         public Deck()
         {
             Cards = new List<Card>();
             Card card;
 
-            for (int i = 1; i <= amountOfSuites; i++)
+            for (int i = 1; i <= 4; i++)
             {
-                for (int j = 1; j < maxCards; j++)
+                for (int j = 1; j <= 13; j++)
                 {
                     card = new Card();
                     card.Number = j;
@@ -48,7 +46,7 @@ namespace JAMK.IT
         
         public Card LoopDeck()
         {
-            Card card = Cards[maxCards * amountOfSuites];
+            Card card = Cards[Cards.Count];
             return card;
         } 
     }
