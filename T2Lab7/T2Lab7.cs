@@ -13,20 +13,19 @@ namespace JAMK.IT
 
         public void ReadFromFile()
         {
+            var sameName = new SortedDictionary<string, int>(); // Adding Sorted prefix to Dictionary, sorts the list
             try
             {
-                var sameName = new Dictionary<string, int>();
-
-                foreach (string item in File.ReadAllLines(@"D:\K9090\Olio\Repo\harjoitukset\nimet.txt"))
+                foreach (string line in File.ReadAllLines(@"D:\K9090\Olio\Repo\harjoitukset\nimet.txt"))
                 {
                     i++;
-                    if (sameName.ContainsKey(item))
+                    if (sameName.ContainsKey(line))
                     {
-                        sameName[item] = sameName[item] + 1;
+                        sameName[line] = sameName[line] + 1;
                     }
                     else
                     {
-                        sameName.Add(item, 1);
+                        sameName.Add(line, 1);
                     }
                 }
 
@@ -37,6 +36,7 @@ namespace JAMK.IT
                     Console.WriteLine(pair.Key + " " + pair.Value);
                 }
             }
+
             catch (FileNotFoundException)
             {
                 Console.WriteLine("File not found (FileNotFoundException)");

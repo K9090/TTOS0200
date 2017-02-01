@@ -19,7 +19,6 @@ namespace JAMK.IT
             StreamWriter outputFile2 = null;
             try
             {
-                
                 outputFile1 = new StreamWriter(@"..\..\T3ints.txt");
                 outputFile2 = new StreamWriter(@"..\..\T3doubles.txt");
                 do

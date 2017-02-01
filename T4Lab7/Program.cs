@@ -42,11 +42,10 @@ namespace JAMK.IT.T4Lab7
                 {
                     writeMultiStream.Close();
                 }
-                
             }
 
             Stream openStream = null;
-            List<TvProgram> readPrograms = null;
+            List<TvProgram> readPrograms = new List<TvProgram>();
             try
             {
                 openStream = new FileStream("Programs.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
