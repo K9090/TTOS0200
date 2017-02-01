@@ -21,8 +21,6 @@ namespace JAMK.IT.T1Lab8
 
             dice.Randomize();
 
-            dice.ReadHistory();
-
             Console.WriteLine(dice.ToString());
         }
     }
