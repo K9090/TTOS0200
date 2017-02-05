@@ -4,43 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JAMK.IT
+namespace JAMK.IT.T5Lab8
 {
-    interface ICalculator
-    {
-        int Add(int number1, int number2);
-        int Multiply(int number1, int number2);
-        int Divide(int number1, int number2);
-        int Subtract(int number1, int number2);
-    }
-
-    public class Calculator : ICalculator
-    {
-        public int Add(int n1, int n2)
-        {
-            return n1 + n2;
-        }
-
-        public int Multiply(int n1, int n2)
-        {
-            return n1 * n2;
-        }
-
-        public int Divide(int n1, int n2)
-        {
-            return n1 / n2;
-        }
-
-        public int Subtract(int n1, int n2)
-        {
-            return n1 - n2;
-        }
-    }
+    
     class Program
     {
         static void Main(string[] args)
         {
+            Print();
+        }
 
+        static void Print()
+        {
+            double[] array = { 1.0, 2.0, 3.3, 22.5, 6.3, -4.5, -12.0 };
+
+            try
+            {
+                Console.WriteLine("Sum: {0:F2}", ArrayCalcs.Sum(array));
+                Console.WriteLine("Average: {0:F2}", ArrayCalcs.Avg(array));
+                Console.WriteLine("Min: {0:F2}", ArrayCalcs.Min(array));
+                Console.WriteLine("Max: {0:F2}", ArrayCalcs.Max(array));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
