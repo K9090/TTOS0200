@@ -10,7 +10,15 @@ namespace JAMK.IT.T4Lab8
     {
         static void Main(string[] args)
         {
-            DrawStuff();
+            try
+            {
+                DrawStuff();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         static void DrawStuff()
@@ -21,62 +29,50 @@ namespace JAMK.IT.T4Lab8
                 Circle circle = new Circle();
                 circle.Name = "Circle";
                 circle.Radius = 1;
-                circle.Draw();
-                circle.PrintRadArea();
-                circle.PrintCircumference();
-                Console.WriteLine();
-
-
+                
                 Circle circle1 = new Circle();
                 circle1.Name = "Bigger circle";
                 circle1.Radius = 3;
-                circle1.Draw();
-                circle1.PrintRadArea();
-                circle1.PrintCircumference();
-                Console.WriteLine();
-
-
+                
                 Rectangle rectangle = new Rectangle();
                 rectangle.Name = "Rectangle";
                 rectangle.Width = 25;
                 rectangle.Height = 120;
-                rectangle.Draw();
-                rectangle.PrintRadArea();
-                rectangle.PrintCircumference();
-                Console.WriteLine();
-
-
+                
                 Rectangle rectangle1 = new Rectangle();
                 rectangle1.Name = "Smaller rectangle";
                 rectangle1.Width = 5;
                 rectangle1.Height = 2.5;
-                rectangle1.Draw();
-                rectangle1.PrintRadArea();
-                rectangle1.PrintCircumference();
-                Console.WriteLine();
 
-                List<Shape> shapes = new List<Shape>();
-                // use polymorphis to store objects
-                shapes.Add(circle);
-                shapes.Add(circle1);
-                shapes.Add(rectangle);
-                shapes.Add(rectangle1);
-
-                for (int j = 0; j < Console.WindowWidth; j++)
+                Shapes shapes = new Shapes();
+                try
                 {
-                    Console.Write("-");
-                }
-                Console.WriteLine();
+                    shapes.AddShape(circle);
+                    shapes.AddShape(circle1);
+                    shapes.AddShape(rectangle);
+                    shapes.AddShape(rectangle1);
 
-                Console.WriteLine("Loop through all drawing objects in a list:");
-                foreach (Shape item in shapes)
-                {
-                    Console.WriteLine("\nShape #{0}", i);
-                    item.Draw();
-                    item.PrintRadArea();
-                    item.PrintCircumference();
-                    i++;
+                    for (int j = 0; j < Console.WindowWidth; j++)
+                    {
+                        Console.Write("-");
+                    }
+                    Console.WriteLine();
+
+                    Console.WriteLine("Print out list:");
+                    foreach (Shape item in shapes.ShapesList)
+                    {
+                        Console.WriteLine("\nShape #{0}", i);
+                        Console.WriteLine(item.Draw());
+                        Console.WriteLine(item.PrintRadArea());
+                        Console.WriteLine(item.PrintCircumference());
+                        i++;
+                    }
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                
                 Console.WriteLine();
             }
         }
