@@ -24,6 +24,7 @@ namespace JAMK.IT.T3Lab8
         {
             List<Fisher> fisher = new List<Fisher>();
             List<Fish> fish = new List<Fish>();
+            List<LocationOfCatch> location = new List<LocationOfCatch>();
 
             try
             {
@@ -34,25 +35,67 @@ namespace JAMK.IT.T3Lab8
                 fisher.Add(fisher2);
 
                 Fish fish1 = new Fish { Specie = "Salmon", Size = 160, Weight = 15 };
-                Fish fish2 = new Fish { Specie = "Pike", Size = 2000, Weight = 15 };
-
-                fish.Add(fish1);
-                fish.Add(fish2);
+                Fish fish2 = new Fish { Specie = "Pike", Size = 2000, Weight = 250 };
 
                 LocationOfCatch location1 = new LocationOfCatch { Place = "Keurusselkä", Location = "Middle-Finland" };
                 LocationOfCatch location2 = new LocationOfCatch { Place = "River Teno", Location = "Lapland" };
 
+                fish.Add(fish1);
+                fish.Add(fish2);   
+
+                location.Add(location1);
+                location.Add(location2);
+
+                Console.WriteLine("Fish registery:\n");
+
+                for (int i = 0; i < Console.WindowWidth; i++)
+                {
+                    Console.Write("-");
+                }
+
+                Console.WriteLine();
+
+                for (int i = 0; i < fisher.Count; i++)
+                {
+                    Console.WriteLine("\nNew fisher added to registery:");
+                    Console.WriteLine("\nFisher #{0}", i + 1);
+                    Console.WriteLine(fisher[i].ToString());
+                }
+
+                for (int i = 0; i < Console.WindowWidth; i++)
+                {
+                    Console.Write("-");
+                }
+
+                Console.WriteLine("\nRecorded actions:\n");
                 
-                Console.WriteLine(fisher1.ToString());
                 fisher1.AddFish(fish1);
                 fisher1.AddLocation(location1);
 
                 Console.WriteLine();
-
-                Console.WriteLine(fisher2.ToString());
-                fisher2.AddLocation(location2);
+                
                 fisher2.AddFish(fish2);
+                fisher2.AddLocation(location2);
+
+                Console.WriteLine();
+
+                for (int i = 0; i < Console.WindowWidth; i++)
+                {
+                    Console.Write("-");
+                }
+
+                Console.WriteLine("\nRecorded catches:");
+
+                for (int i = 0; i < fish.Count; i++)
+                {
+                    Console.WriteLine("\nFish #{0}:", i + 1);
+                    Console.WriteLine(fish[i].ToString());
+                    Console.WriteLine(location[i].ToString());
+                }
+
+                Console.WriteLine();
             }
+
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);

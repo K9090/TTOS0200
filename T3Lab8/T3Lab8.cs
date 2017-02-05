@@ -22,13 +22,13 @@ namespace JAMK.IT
         public void AddFish(Fish fish)
         {
             Fishes.Add(fish);
-            Console.WriteLine("\n- {0} caught {1}!", Name, fish.Specie);
+            Console.WriteLine("- {0} caught {1}!", Name, fish.Specie);
         }
 
         public void AddLocation(LocationOfCatch location)
         {
             Locations.Add(location);
-            Console.WriteLine("\n- From: {0}, {1}", location.Place, location.Location);
+            Console.WriteLine("- From: {0}, {1}", location.Place, location.Location);
         }
 
         public override string ToString()
