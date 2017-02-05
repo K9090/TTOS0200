@@ -21,14 +21,28 @@ namespace JAMK.IT
 
         public void AddFish(Fish fish)
         {
-            Fishes.Add(fish);
-            Console.WriteLine("- {0} caught {1}!", Name, fish.Specie);
+            try
+            {
+                Fishes.Add(fish);
+                Console.WriteLine("- {0} caught {1}", Name, fish.Specie);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public void AddLocation(LocationOfCatch location)
         {
-            Locations.Add(location);
-            Console.WriteLine("- From: {0}, {1}", location.Place, location.Location);
+            try
+            {
+                Locations.Add(location);
+                Console.WriteLine("- From: {0}, {1}", location.Place, location.Location);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         public override string ToString()

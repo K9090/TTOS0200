@@ -46,14 +46,11 @@ namespace JAMK.IT.T3Lab8
                 location.Add(location1);
                 location.Add(location2);
 
-                Console.WriteLine("Fish registery:\n");
+                MakeLines();
 
-                for (int i = 0; i < Console.WindowWidth; i++)
-                {
-                    Console.Write("-");
-                }
+                Console.WriteLine("Fisher registery:");
 
-                Console.WriteLine();
+                MakeLines();
 
                 for (int i = 0; i < fisher.Count; i++)
                 {
@@ -62,13 +59,16 @@ namespace JAMK.IT.T3Lab8
                     Console.WriteLine(fisher[i].ToString());
                 }
 
-                for (int i = 0; i < Console.WindowWidth; i++)
-                {
-                    Console.Write("-");
-                }
+                Console.WriteLine();
 
-                Console.WriteLine("\nRecorded actions:\n");
-                
+                MakeLines();
+
+                Console.WriteLine("Recorded actions:");
+
+                MakeLines();
+
+                Console.WriteLine();
+
                 fisher1.AddFish(fish1);
                 fisher1.AddLocation(location1);
 
@@ -79,12 +79,11 @@ namespace JAMK.IT.T3Lab8
 
                 Console.WriteLine();
 
-                for (int i = 0; i < Console.WindowWidth; i++)
-                {
-                    Console.Write("-");
-                }
+                MakeLines();
 
-                Console.WriteLine("\nRecorded catches:");
+                Console.WriteLine("Recorded catches:");
+
+                MakeLines();
 
                 for (int i = 0; i < fish.Count; i++)
                 {
@@ -92,13 +91,20 @@ namespace JAMK.IT.T3Lab8
                     Console.WriteLine(fish[i].ToString());
                     Console.WriteLine(location[i].ToString());
                 }
-
                 Console.WriteLine();
             }
 
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+        }
+
+        static void MakeLines()
+        {
+            for (int i = 0; i < Console.WindowWidth; i++)
+            {
+                Console.Write("-");
             }
         }
     }
