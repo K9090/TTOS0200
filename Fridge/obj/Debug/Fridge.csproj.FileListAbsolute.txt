@@ -1,0 +1,6 @@
+D:\K9090\Olio\Repo\harjoitukset\Fridge\bin\Debug\Fridge.exe.config
+D:\K9090\Olio\Repo\harjoitukset\Fridge\bin\Debug\Fridge.exe
+D:\K9090\Olio\Repo\harjoitukset\Fridge\bin\Debug\Fridge.pdb
+D:\K9090\Olio\Repo\harjoitukset\Fridge\obj\Debug\Fridge.csprojResolveAssemblyReference.cache
+D:\K9090\Olio\Repo\harjoitukset\Fridge\obj\Debug\Fridge.exe
+D:\K9090\Olio\Repo\harjoitukset\Fridge\obj\Debug\Fridge.pdb

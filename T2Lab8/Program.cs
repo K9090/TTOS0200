@@ -10,22 +10,37 @@ namespace JAMK.IT.T2Lab8
     {
         static void Main(string[] args)
         {
-            FillCart();
+            try
+            {
+                FillCart();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
 
         static void FillCart()
         {
             List<ShoppingCart> cart = new List<ShoppingCart>();
 
-            cart.Add(new Product { Name = "Coca-cola", Price = 1.59 });
-            cart.Add(new Product { Name = "Old Pascas rum", Price = 24.99 });
-            cart.Add(new Product { Name = "Cabbage", Price = 1.25 });
-
-            Console.WriteLine("Products in cart");
-            Console.WriteLine("-------------------------------------");
-            foreach (var item in cart)
+            try
             {
-                Console.WriteLine(item.ToString());
+                cart.Add(new Product { Name = "Coca-cola", Price = 1.59 });
+                cart.Add(new Product { Name = "Old Pascas rum", Price = 24.99 });
+                cart.Add(new Product { Name = "Cabbage", Price = 1.25 });
+
+                Console.WriteLine("Products in cart");
+                Console.WriteLine("-------------------------------------");
+                foreach (var item in cart)
+                {
+                    Console.WriteLine(item.ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
             Console.WriteLine();
         }

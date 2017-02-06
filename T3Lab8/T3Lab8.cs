@@ -47,7 +47,14 @@ namespace JAMK.IT
 
         public override string ToString()
         {
-            return "- Name of fisher: " + Name + "\n- Phone number: " + PhoneNumber;
+            try
+            {
+                return "- Name of fisher: " + Name + "\n- Phone number: " + PhoneNumber;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
     }
 
@@ -59,7 +66,14 @@ namespace JAMK.IT
 
         public override string ToString()
         {
-            return "- Specie: " + Specie + "\n- Size: " + Size + " cm\n- Weight: " + Weight + " kg";
+            try
+            {
+                return "- Specie: " + Specie + "\n- Size: " + Size + " cm\n- Weight: " + Weight + " kg";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
     }
 
@@ -70,7 +84,14 @@ namespace JAMK.IT
 
         public override string ToString()
         {
-            return "- Place of catch: " + Place + "\n- Location: " + Location;
+            try
+            {
+                return "- Place of catch: " + Place + "\n- Location: " + Location;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
     }
 }

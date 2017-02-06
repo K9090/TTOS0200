@@ -1,0 +1,5 @@
+D:\K9090\Olio\Repo\harjoitukset\T4vko4\bin\Debug\T4vko4.exe.config
+D:\K9090\Olio\Repo\harjoitukset\T4vko4\bin\Debug\T4vko4.exe
+D:\K9090\Olio\Repo\harjoitukset\T4vko4\bin\Debug\T4vko4.pdb
+D:\K9090\Olio\Repo\harjoitukset\T4vko4\obj\Debug\T4vko4.exe
+D:\K9090\Olio\Repo\harjoitukset\T4vko4\obj\Debug\T4vko4.pdb

@@ -1,0 +1,5 @@
+D:\K9090\Olio\Repo\harjoitukset\Televisio\bin\Debug\Televisio.exe.config
+D:\K9090\Olio\Repo\harjoitukset\Televisio\bin\Debug\Televisio.exe
+D:\K9090\Olio\Repo\harjoitukset\Televisio\bin\Debug\Televisio.pdb
+D:\K9090\Olio\Repo\harjoitukset\Televisio\obj\Debug\Televisio.exe
+D:\K9090\Olio\Repo\harjoitukset\Televisio\obj\Debug\Televisio.pdb

@@ -1,0 +1,6 @@
+D:\K9090\Olio\Repo\harjoitukset\T1Lab7\bin\Debug\T1Lab7.exe.config
+D:\K9090\Olio\Repo\harjoitukset\T1Lab7\bin\Debug\T1Lab7.exe
+D:\K9090\Olio\Repo\harjoitukset\T1Lab7\bin\Debug\T1Lab7.pdb
+D:\K9090\Olio\Repo\harjoitukset\T1Lab7\obj\Debug\T1Lab7.csprojResolveAssemblyReference.cache
+D:\K9090\Olio\Repo\harjoitukset\T1Lab7\obj\Debug\T1Lab7.exe
+D:\K9090\Olio\Repo\harjoitukset\T1Lab7\obj\Debug\T1Lab7.pdb

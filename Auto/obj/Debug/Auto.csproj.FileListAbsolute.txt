@@ -1,0 +1,5 @@
+D:\K9090\Olio\Repo\harjoitukset\Auto\bin\Debug\Auto.exe.config
+D:\K9090\Olio\Repo\harjoitukset\Auto\bin\Debug\Auto.exe
+D:\K9090\Olio\Repo\harjoitukset\Auto\bin\Debug\Auto.pdb
+D:\K9090\Olio\Repo\harjoitukset\Auto\obj\Debug\Auto.exe
+D:\K9090\Olio\Repo\harjoitukset\Auto\obj\Debug\Auto.pdb

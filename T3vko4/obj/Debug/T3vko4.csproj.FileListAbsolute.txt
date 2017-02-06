@@ -1,0 +1,5 @@
+D:\K9090\Olio\Repo\harjoitukset\T3vko4\bin\Debug\T3vko4.exe.config
+D:\K9090\Olio\Repo\harjoitukset\T3vko4\bin\Debug\T3vko4.exe
+D:\K9090\Olio\Repo\harjoitukset\T3vko4\bin\Debug\T3vko4.pdb
+D:\K9090\Olio\Repo\harjoitukset\T3vko4\obj\Debug\T3vko4.exe
+D:\K9090\Olio\Repo\harjoitukset\T3vko4\obj\Debug\T3vko4.pdb

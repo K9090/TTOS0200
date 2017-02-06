@@ -18,7 +18,14 @@ namespace JAMK.IT
 
         public override string ToString()
         {
-            return "\tName of item: " + Name + " and price: " + Price;
+            try
+            {
+                return "\tName of item: " + Name + " and price: " + Price;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
     }
 }

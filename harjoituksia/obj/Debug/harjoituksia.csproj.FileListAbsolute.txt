@@ -1,0 +1,6 @@
+D:\K9090\Olio\Repo\harjoitukset\harjoituksia\bin\Debug\harjoituksia.exe.config
+D:\K9090\Olio\Repo\harjoitukset\harjoituksia\bin\Debug\harjoituksia.exe
+D:\K9090\Olio\Repo\harjoitukset\harjoituksia\bin\Debug\harjoituksia.pdb
+D:\K9090\Olio\Repo\harjoitukset\harjoituksia\obj\Debug\harjoituksia.csprojResolveAssemblyReference.cache
+D:\K9090\Olio\Repo\harjoitukset\harjoituksia\obj\Debug\harjoituksia.exe
+D:\K9090\Olio\Repo\harjoitukset\harjoituksia\obj\Debug\harjoituksia.pdb

@@ -1,0 +1,6 @@
+D:\K9090\Olio\Repo\harjoitukset\Kiuas\bin\Debug\Kiuas.exe.config
+D:\K9090\Olio\Repo\harjoitukset\Kiuas\bin\Debug\Kiuas.exe
+D:\K9090\Olio\Repo\harjoitukset\Kiuas\bin\Debug\Kiuas.pdb
+D:\K9090\Olio\Repo\harjoitukset\Kiuas\obj\Debug\Kiuas.csprojResolveAssemblyReference.cache
+D:\K9090\Olio\Repo\harjoitukset\Kiuas\obj\Debug\Kiuas.exe
+D:\K9090\Olio\Repo\harjoitukset\Kiuas\obj\Debug\Kiuas.pdb

@@ -1,0 +1,5 @@
+D:\K9090\Olio\Repo\harjoitukset\Teht5vko3\bin\Debug\Teht5vko3.exe.config
+D:\K9090\Olio\Repo\harjoitukset\Teht5vko3\bin\Debug\Teht5vko3.exe
+D:\K9090\Olio\Repo\harjoitukset\Teht5vko3\bin\Debug\Teht5vko3.pdb
+D:\K9090\Olio\Repo\harjoitukset\Teht5vko3\obj\Debug\Teht5vko3.exe
+D:\K9090\Olio\Repo\harjoitukset\Teht5vko3\obj\Debug\Teht5vko3.pdb

@@ -1,0 +1,6 @@
+D:\K9090\Olio\Repo\harjoitukset\testaus\bin\Debug\testaus.exe.config
+D:\K9090\Olio\Repo\harjoitukset\testaus\bin\Debug\testaus.exe
+D:\K9090\Olio\Repo\harjoitukset\testaus\bin\Debug\testaus.pdb
+D:\K9090\Olio\Repo\harjoitukset\testaus\obj\Debug\testaus.csprojResolveAssemblyReference.cache
+D:\K9090\Olio\Repo\harjoitukset\testaus\obj\Debug\testaus.exe
+D:\K9090\Olio\Repo\harjoitukset\testaus\obj\Debug\testaus.pdb

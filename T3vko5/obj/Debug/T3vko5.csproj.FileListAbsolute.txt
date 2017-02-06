@@ -1,0 +1,6 @@
+D:\K9090\Olio\Repo\harjoitukset\T3vko5\bin\Debug\T3vko5.exe.config
+D:\K9090\Olio\Repo\harjoitukset\T3vko5\bin\Debug\T3vko5.exe
+D:\K9090\Olio\Repo\harjoitukset\T3vko5\bin\Debug\T3vko5.pdb
+D:\K9090\Olio\Repo\harjoitukset\T3vko5\obj\Debug\T3vko5.csprojResolveAssemblyReference.cache
+D:\K9090\Olio\Repo\harjoitukset\T3vko5\obj\Debug\T3vko5.exe
+D:\K9090\Olio\Repo\harjoitukset\T3vko5\obj\Debug\T3vko5.pdb

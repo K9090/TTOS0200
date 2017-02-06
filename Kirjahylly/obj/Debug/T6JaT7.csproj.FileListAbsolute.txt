@@ -1,0 +1,6 @@
+D:\K9090\Olio\Repo\harjoitukset\Kirjahylly\bin\Debug\Kirjahylly.exe.config
+D:\K9090\Olio\Repo\harjoitukset\Kirjahylly\bin\Debug\Kirjahylly.exe
+D:\K9090\Olio\Repo\harjoitukset\Kirjahylly\bin\Debug\Kirjahylly.pdb
+D:\K9090\Olio\Repo\harjoitukset\Kirjahylly\obj\Debug\Kirjahylly.exe
+D:\K9090\Olio\Repo\harjoitukset\Kirjahylly\obj\Debug\Kirjahylly.pdb
+D:\K9090\Olio\Repo\harjoitukset\Kirjahylly\obj\Debug\T6JaT7.csprojResolveAssemblyReference.cache

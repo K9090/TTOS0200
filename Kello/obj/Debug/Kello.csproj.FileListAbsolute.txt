@@ -1,0 +1,5 @@
+D:\K9090\Olio\Repo\harjoitukset\Kello\bin\Debug\Kello.exe.config
+D:\K9090\Olio\Repo\harjoitukset\Kello\bin\Debug\Kello.exe
+D:\K9090\Olio\Repo\harjoitukset\Kello\bin\Debug\Kello.pdb
+D:\K9090\Olio\Repo\harjoitukset\Kello\obj\Debug\Kello.exe
+D:\K9090\Olio\Repo\harjoitukset\Kello\obj\Debug\Kello.pdb

@@ -1,0 +1,9 @@
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\bin\Debug\testausTests1.dll
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\bin\Debug\testausTests1.pdb
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\bin\Debug\testaus.exe
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\bin\Debug\testaus.pdb
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\obj\Debug\testausTests1.csprojResolveAssemblyReference.cache
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\obj\Debug\testausTests1.dll
+D:\K9090\Olio\Repo\harjoitukset\testausTests1\obj\Debug\testausTests1.pdb
