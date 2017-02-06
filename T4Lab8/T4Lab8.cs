@@ -38,8 +38,7 @@ namespace JAMK.IT
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                return ex.Message;
             }
             
         }
@@ -53,8 +52,7 @@ namespace JAMK.IT
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                return ex.Message;
             }
         }
     }
@@ -77,8 +75,7 @@ namespace JAMK.IT
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                return ex.Message;
             }
         }
 
@@ -91,8 +88,7 @@ namespace JAMK.IT
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
-                return null;
+                return ex.Message;
             }
         }
     }
